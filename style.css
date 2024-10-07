@@ -233,3 +233,39 @@ footer img {
 .socials {
   margin: 0 10px;
 }
+/*******Media query small*************/
+@media (max-width: 480px) {
+  #nav ul {
+    flex-direction: column;
+  }
+
+  .side-dishes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+ 
+}
+/*******Media query media*************/
+@media (max-width: 800px) {
+  #nav ul {
+    flex-direction: column;
+  }
+
+  .side-dishes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+/*********Media query large********/
+@media (max-width: 1400px) {
+  #nav ul {
+    flex-direction: column;
+  }
+
+  .side-dishes {
+    grid-template-columns: 1f 1fr 1fr 1fr;
+    grid-column: 1/3;
+  }
+
+}
