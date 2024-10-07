@@ -72,7 +72,7 @@ header {
 
 
 #meal-type img {
-  display: block;
+  display: flex;
   margin: 0 auto;
   width: 60px; 
   height: auto;
@@ -82,6 +82,18 @@ header {
 .signon {
   display: block;
   align-items: center;
+}
+
+.action-bttn {
+  background-color: #ffffff;
+  justify-content: space-evenly;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 100px;
+  margin: 0px;
+  padding: 20px;
+  border: #eb5428 solid 1px;
 }
 
 
@@ -127,24 +139,25 @@ dt {
 }
 
 .taco-header p{
-  display: grid;
-  grid-column: 2/3;
+  display: flex;
   font-size: 16px;
-  margin: 20px auto;
   line-height: 1.5em;
+  padding-left: 50px;
+  max-width: 1200px;
 }
 
-#search-bar {
-  margin-top: 10px;
+.search-bar {
+  margin: 50px;
   text-align: center;
+  align-items: end;
 }
 
-#search-bar input {
+.search-bar input {
   padding: 10px;
   width: 200px;
   text-align: center;
 }
-#search-bar form button {
+.search-bar button {
   padding: 0px;
   margin-top: 8px;
   margin-right: 16px;
@@ -157,13 +170,31 @@ dt {
   background-color: var(--bt-color);
   color: var(--acc-color1);
   margin: 20px 0;
+  align-self: center;
+  display: block;
 }
 
-
+dd dt {
+  display: flex;
+  margin: 0px;
+  padding: auto;
+}
 
 .details h2 {
-  margin-bottom: 10px;
+  margin: 40px;
   font-size: 1.5em;
+}
+
+.ingredients {
+  align-self: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 40px;
+}
+
+.directions {
+  align-self: auto;
+  padding: 10px 10px 10px 10px;
+  margin: 40px;
 }
 
 
@@ -219,6 +250,8 @@ footer {
   align-items: center;
   padding: 20px;
   width: 100%;
+  background-color: var(--sec-color);
+  justify-content: space-evenly;
 }
 
 footer p {
