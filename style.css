@@ -23,8 +23,6 @@ html {
   background-color: var(--bg-color);
 }
 
-
-
 main {
   display: grid;
   background-color: var(--sec-color);
@@ -35,11 +33,13 @@ main {
 }
 
 header {
-  display: block;
   background-color: #ffffff;
   border-bottom: 1px solid var(--bt-color);
-  align-items: center;
   margin: 0 auto;
+  display: inline-block;
+	gap: 1rem;
+	align-items: center;
+  width: 100%;
 }
 
 .logo {
@@ -49,19 +49,17 @@ header {
 .main-nav ul{
   display:flex;
   list-style-type: none;
-  padding: 0 40px;
+  
 }
 
 .meal-type li {
-  justify-content: space-around;
   list-style: none;
   padding: 0;
   align-items: center;
-  display: inline;
 }
 
 .main-nav a {
-  display: grid;
+  display: flex;
   text-decoration: none;
   color: #eb5428;
   font-size: 16px;
@@ -69,18 +67,20 @@ header {
   font-weight: 400;
   padding: 10px;
   list-style: none;
+  width: 100%;
 }
 
 
-.meal-type img {
-  display: flex;
+#meal-type img {
+  display: block;
   margin: 0 auto;
   width: 60px; 
   height: auto;
 }
 
+
 .signon {
-  display: flex;
+  display: block;
   align-items: center;
 }
 
@@ -114,6 +114,7 @@ dt {
   font-size: 16px;
 }
 
+
 .taco-header h1 {
   text-align: center;
   margin-bottom: 20px;
@@ -125,8 +126,9 @@ dt {
   display: flex;
 }
 
-.taco-copy p {
-  display: flex;
+.taco-header p{
+  display: grid;
+  grid-column: 2/3;
   font-size: 16px;
   margin: 20px auto;
   line-height: 1.5em;
@@ -152,11 +154,27 @@ dt {
 }
 
 .details {
-  display: flex;
-  justify-content: space-around;
   background-color: var(--bt-color);
   color: var(--acc-color1);
-  padding: 20px;
+  margin: 20px 0;
+}
+
+
+
+.details h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+
+.times {
+  display: flex;
+  color: var(--acc-color1);
+}
+
+
+.times dt {
+  font-weight: bold;
 }
 
 dd {
@@ -165,8 +183,53 @@ dd {
 }
 
 .side-dishes {
-  background-color: #B7DAD6;
-  padding: 20px;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  gap: 10px;
+  background-color: #7abfbf; 
 }
 
+.side-dish {
+  max-width: 200px; 
+  text-align: center;
+}
+
+.side-dish img {
+  max-width: 100%; 
+  
+}
+
+.side-dishes h2 {
+  text-align: center;
+  align-items: center;
+}
+
+.side-dish h3 {
+  margin: 10px 0 5px;
+}
+
+.side-dish p {
+  font-size: 16px;
+  color: #0d0d0d; 
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+footer p {
+  font-weight: bold;
+}
+
+footer img {
+  max-width: 50px;
+  float: left;
+}
+
+.socials {
+  margin: 0 10px;
+}
