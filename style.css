@@ -1,61 +1,172 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 /*--------------IMPORTED FONTS-------------------*/
 @import url(https://fonts.google.com/share?selection.family=Bebas%20Neue%7CMontserrat:ital,wght@0,400;0,700;1,400);
 
-html {
-  box-sizing: border-box;
+
+/************Root Variables*******/
+:root {
+  --bt-color:#0d0d0d;
+  --sec-color:#f2f2f2;
+  --bg-color:rgba(122, 191, 191, .5);
+  --acc-color1:#7abfbf;
+  --cta-color:#eb5428;
+  font-family: 'Bebas Neue', 'Montserrat',sans-serif;
+}
+
+/*******Global styles*******/
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-color);
 }
 
 
-body {
-  font-family: 'Bebas Neue', 'Montserrat', sans-serif; 
+
+main {
+  display: grid;
+  background-color: var(--sec-color);
+  font-family: 'Bebas Neue', 'Montserrat', sans-serif;
+  color: var(--bt-color);
+  max-width: 1300px;
+  margin: 0px auto;
 }
+
+header {
+  display: block;
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--bt-color);
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: block;
+}
+
+.main-nav ul{
+  display:flex;
+  list-style-type: none;
+  padding: 0 40px;
+}
+
+.meal-type li {
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  display: inline;
+}
+
+.main-nav a {
+  display: grid;
+  text-decoration: none;
+  color: #eb5428;
+  font-size: 16px;
+  font-family: 'Bebas Neue';
+  font-weight: 400;
+  padding: 10px;
+  list-style: none;
+}
+
+
+.meal-type img {
+  display: flex;
+  margin: 0 auto;
+  width: 60px; 
+  height: auto;
+}
+
+.signon {
+  display: flex;
+  align-items: center;
+}
+
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue';
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p,dd {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--bt-color);
+}
+
+dt {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.taco-header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.taco-header img {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+}
+
+.taco-copy p {
+  display: flex;
+  font-size: 16px;
+  margin: 20px auto;
+  line-height: 1.5em;
+}
+
+#search-bar {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#search-bar input {
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+#search-bar form button {
+  padding: 0px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: #eb5428;
+  align-items: center;
+  border: none;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bt-color);
+  color: var(--acc-color1);
+  padding: 20px;
+}
+
+dd {
+  color: var(--acc-color1);
+  justify-content: space-around;
+}
+
+.side-dishes {
+  background-color: #B7DAD6;
+  padding: 20px;
+  display: inline-flex;
+}
+
